@@ -1,5 +1,5 @@
 {
-  "name": "msvdev/yii2-widget-mappicker",
+  "name": "vl_anufriev/yii2-widget-mappicker",
   "description": "Yii2 map widget allows you to simplify the entry of geographic coordinates for your form. Support google and yandex maps services.",
   "keywords": ["yii2", "extension", "widget", "plugin", "map", "yandexmap", "googlemap"],
   "type": "yii2-extension",
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "msvdev\\widgets\\mappicker\\": ""
+      "vl_anufriev\\widgets\\mappicker\\": ""
     }
   }
 }

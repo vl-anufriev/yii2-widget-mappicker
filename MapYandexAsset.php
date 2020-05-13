@@ -1,11 +1,11 @@
 <?php
-namespace msvdev\widgets\mappicker;
+namespace vl_anufriev\widgets\mappicker;
 
 use yii\web\AssetBundle;
 
 /**
  * Class MapYandexAsset
- * @package msvdev\widgets\mappicker
+ * @package vl_anufriev\widgets\mappicker
  */
 class MapYandexAsset extends AssetBundle{
 
@@ -25,7 +25,7 @@ class MapYandexAsset extends AssetBundle{
     /**
      * @var string assets source path
      */
-    public $sourcePath = '@msvdev/widgets/mappicker/assets';
+    public $sourcePath = '@vl_anufriev/widgets/mappicker/assets';
     /**
      * @var array js options
      */

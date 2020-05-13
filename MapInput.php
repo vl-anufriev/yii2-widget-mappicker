@@ -1,5 +1,5 @@
 <?php
-namespace msvdev\widgets\mappicker;
+namespace vl_anufriev\widgets\mappicker;
 
 use yii\base\InvalidConfigException;
 use \yii\helpers\Html;
@@ -9,7 +9,7 @@ use \Yii;
 
 /**
  * Class Map
- * @package msvdev\mappicker
+ * @package vl_anufriev\mappicker
  */
 class MapInput extends InputWidget{
     /**
@@ -95,12 +95,12 @@ class MapInput extends InputWidget{
     public function registerTranslations()
     {
         $i18n = Yii::$app->i18n;
-        $i18n->translations['msvdev/widgets/mappicker/*'] = [
+        $i18n->translations['vl_anufriev/widgets/mappicker/*'] = [
             'class'          => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en-US',
-            'basePath'       => '@msvdev/widgets/mappicker/messages',
+            'basePath'       => '@vl_anufriev/widgets/mappicker/messages',
             'fileMap'        => [
-                'msvdev/widgets/mappicker/main' => 'main.php',
+                'vl_anufriev/widgets/mappicker/main' => 'main.php',
             ]
         ];
     }
@@ -115,7 +115,7 @@ class MapInput extends InputWidget{
      */
     public static function t($category, $message, $params = [], $language = null)
     {
-        return Yii::t('msvdev/widgets/mappicker/' . $category, $message, $params, $language);
+        return Yii::t('vl_anufriev/widgets/mappicker/' . $category, $message, $params, $language);
     }
 
     /**
