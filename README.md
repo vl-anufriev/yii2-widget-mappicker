@@ -1,4 +1,9 @@
 # Map input widget for Yii2
+
+### This repository fork from msvdev/yii2-widget-mappicker.
+
+**Added Yandex Map API key.**
+
 The widget allows you to simplify the entry of geographic coordinates for your form. Support google and yandex maps services.
 
 ## Installation

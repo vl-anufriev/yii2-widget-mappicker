@@ -8,6 +8,8 @@ use yii\web\AssetBundle;
  * @package msvdev\widgets\mappicker
  */
 class MapYandexAsset extends AssetBundle{
+
+    public static $apiKey = '';
     /**
      * @var string map language
      */
@@ -50,6 +52,7 @@ class MapYandexAsset extends AssetBundle{
         $libraryUrl = $this->serviceUrl.'/'.self::$version.'/?';
         $libraryUrl .= http_build_query([
             'lang' => self::$language,
+            'apikey' => self::$apiKey
         ]);
         return $libraryUrl;
     }

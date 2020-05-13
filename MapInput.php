@@ -166,6 +166,12 @@ class MapInput extends InputWidget{
         $mapId = $this->id;
         $options = $this->getMapJsOptions();
         if($this->service == 'yandex'){
+
+            if(!$this->apiKey){
+                throw new InvalidConfigException("Api key required for yandex maps.");
+            }
+            MapYandexAsset::$apiKey = $this->apiKey;
+
             MapYandexAsset::$language = $this->getMapLanguage();
             MapYandexAsset::register($view);
             $view->registerJs("
