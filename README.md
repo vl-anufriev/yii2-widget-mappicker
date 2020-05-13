@@ -1,6 +1,6 @@
 # Map input widget for Yii2
 
-### This repository forked from vl_anufriev/yii2-widget-mappicker.
+### This repository forked from  mihaylichenko/yii2-widget-mappicker.
 
 **Added Yandex Map API key.**
 
