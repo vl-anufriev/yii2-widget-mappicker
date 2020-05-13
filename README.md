@@ -1,6 +1,6 @@
 # Map input widget for Yii2
 
-### This repository fork from msvdev/yii2-widget-mappicker.
+### This repository forked from vl_anufriev/yii2-widget-mappicker.
 
 **Added Yandex Map API key.**
 
@@ -10,13 +10,13 @@ The widget allows you to simplify the entry of geographic coordinates for your f
 The preferred way to install this extension is through composer.
 
 ```
-$ php composer.phar require msvdev/yii2-widget-mappicker "*"
+$ php composer.phar require vl_anufriev/yii2-widget-mappicker "*"
 ```
 
 or add
 
 ```
-"msvdev/yii2-widget-mappicker": "*"
+"vl_anufriev/yii2-widget-mappicker": "*"
 ```
 
 to the `require` section of your `composer.json` file.
@@ -26,17 +26,17 @@ to the `require` section of your `composer.json` file.
 ###Minimal example for google maps
 
 ```php
-echo $form->field($model, 'coordinatesAttribute')->widget(\msvdev\widgets\mappicker\MapInput::className(), ['apiKey' => 'google_api_key']);
+echo $form->field($model, 'coordinatesAttribute')->widget(\vl_anufriev\widgets\mappicker\MapInput::className(), ['apiKey' => 'google_api_key']);
 ```
 
 ### Minimal example for yandex maps
 ```php
-echo $form->field($model, 'coordinatesAttribute')->widget(\msvdev\widgets\mappicker\MapInput::className(), ['service' => 'yandex']);
+echo $form->field($model, 'coordinatesAttribute')->widget(\vl_anufriev\widgets\mappicker\MapInput::className(), ['service' => 'yandex']);
 ```
 
 ### Example settings
 ```php
-use \msvdev\widgets\mappicker\MapInput;
+use \vl_anufriev\widgets\mappicker\MapInput;
 
 echo $form->field($model, 'coordinatesAttribute')->widget(
     MapInput::className(), 
